@@ -1,0 +1,88 @@
+{
+  "project": {
+    "version": "1.0.0-beta.18",
+    "name": "sample"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.json",
+      "prefix": "app",
+      "mobile": false,
+      "styles": [
+        "styles.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "custom/plugin/bootstrap/css/animate.css",
+        "custom/plugin/bootstrap/css/custom.css",
+        "custom/plugin/bootstrap/css/font-awesome.css",
+        "custom/plugin/bootstrap/css/owl.carousel.css",
+        "custom/plugin/bootstrap/css/owl.theme.css",
+        "custom/plugin/bootstrap/css/style.default.css",
+        "custom/plugin/bootstrap/css/fonts-googleapis.css",
+        "custom/plugin/select2-4.0.3/dist/css/select2.min.css"
+        
+      ],
+      "scripts": [
+        "../node_modules/bootstrap/js/tests/vendor/jquery.min.js",
+        "custom/plugin/bootstrap/js/jquery.min.js",
+        "custom/plugin/bootstrap/js/jquery.cookie.js",
+         
+        "custom/plugin/underscore/underscore.min.js",
+        "custom/plugin/bootstrap/js/bootstrap-hover-dropdown.js",
+        "custom/plugin/bootstrap/js/bootstrap.min.js",
+        "custom/plugin/bootstrap/js/front.js",
+        "custom/plugin/bootstrap/js/owl.carousel.js",
+        "custom/plugin/bootstrap/js/respond.min.js",
+        "custom/plugin/bootstrap/js/waypoints.min.js",
+        "custom/plugin/bootstrap/js/jquery.counterup.min.js",
+        "custom/plugin/bootstrap/js/jquery.parallax-1.1.3.js",
+        "custom/plugin/select2-4.0.3/dist/js/select2.full.min.js",
+        "custom/plugin/mycart/jquery.mycart.js",
+        "custom/plugin/mdb/js/mdb.min.js",
+        
+        "script.js"
+      ],
+      "environments": {
+        "source": "environments/environment.ts",
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "addons": [],
+  "packages": [],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "prefixInterfaces": false,
+    "inline": {
+      "style": false,
+      "template": false
+    },
+    "spec": {
+      "class": false,
+      "component": true,
+      "directive": true,
+      "module": false,
+      "pipe": true,
+      "service": true
+    }
+  }
+}
